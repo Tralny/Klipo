@@ -1,129 +1,79 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Klipo Privacy Policy">
+  <meta name="theme-color" content="#0a7cff">
   <title>Klipo Privacy Policy</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f7f8fa;
-      --paper: #ffffff;
-      --text: #1f2328;
-      --muted: #6b7280;
-      --line: #e5e7eb;
-      --accent: #0a84ff;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0f1115;
-        --paper: #171a21;
-        --text: #f4f5f7;
-        --muted: #a6adbb;
-        --line: #2a2f3a;
-        --accent: #60a5fa;
-      }
-    }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
-    }
-    .page {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 48px 20px 72px;
-    }
-    .card {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 34px;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
-    }
-    h1 {
-      margin: 0 0 6px;
-      font-size: 30px;
-      line-height: 1.25;
-    }
-    h2 {
-      margin: 30px 0 8px;
-      font-size: 19px;
-    }
-    p, ul {
-      margin: 8px 0;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    .meta {
-      color: var(--muted);
-      margin-bottom: 24px;
-    }
-    a {
-      color: var(--accent);
-    }
-  </style>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>
+    try {
+      document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
+    } catch (_) {}
+  </script>
 </head>
-<body>
-  <div class="page">
-    <div class="card">
-      <h1>Klipo Privacy Policy</h1>
-      <p class="meta">Last updated: July 4, 2026</p>
+<body data-title-zh="Klipo 隐私政策" data-title-en="Klipo Privacy Policy">
+  <a class="skip-link" href="#main"><span data-lang="zh">跳到主要内容</span><span data-lang="en">Skip to content</span></a>
+  <header class="site-header"><nav class="nav-shell" aria-label="Primary navigation"><a class="brand" href="index.html" aria-label="Klipo home"><img src="assets/app-icon.png" alt="" width="38" height="38"><span>Klipo</span></a><div class="nav-links"><a class="nav-link" href="index.html"><span data-lang="zh">产品</span><span data-lang="en">Product</span></a><a class="nav-link" href="support.html"><span data-lang="zh">支持</span><span data-lang="en">Support</span></a><a class="nav-link" href="privacy-policy.html" aria-current="page"><span data-lang="zh">隐私</span><span data-lang="en">Privacy</span></a><a class="nav-link" href="terms-of-use.html"><span data-lang="zh">条款</span><span data-lang="en">Terms</span></a><button class="language-toggle" type="button" data-language-toggle aria-label="切换到中文">中文</button></div></nav></header>
+  <main id="main" class="legal-shell">
+    <article class="legal-card">
+      <h1><span data-lang="zh">Klipo 隐私政策</span><span data-lang="en">Klipo Privacy Policy</span></h1>
+      <p class="legal-meta"><span data-lang="zh">最后更新：2026 年 7 月 28 日</span><span data-lang="en">Last updated: July 28, 2026</span></p>
 
-      <p>Klipo is a clipboard manager for macOS. We respect your privacy and design the app so that clipboard data stays on your Macs and, when enabled by you, inside your Apple iCloud account. This Privacy Policy explains what information Klipo processes, how it is used, and what controls you have.</p>
+      <div data-lang="en">
+        <p>Klipo is a clipboard manager for iPhone, iPad, and Mac. We design the app so that clipboard data remains on your devices and, when enabled by you, in your Apple iCloud account. This policy explains what Klipo processes and the controls available to you.</p>
+        <h2>1. Information Klipo Processes</h2>
+        <p>To provide clipboard history, search, pinboards, extensions, sync, and paste features, Klipo may process:</p>
+        <ul><li>Clipboard content such as text, links, colors, image data or previews, and file paths.</li><li>Pinboards, pinned states, retention settings, themes, language, shortcuts, and display preferences.</li><li>Local metadata used for display and search, including source app name, app icon, file name, or file path.</li><li>Purchase and entitlement status used to unlock Pro features.</li><li>Information you choose to provide when contacting support.</li></ul>
+        <h2>2. Local Storage and iCloud Sync</h2>
+        <p>Klipo primarily stores clipboard history and settings on your devices. If you enable iCloud sync, supported app data is synchronized through Apple CloudKit to your iCloud account. Klipo does not operate a separate server that collects or sells your clipboard history.</p>
+        <h2>3. Keyboard and Share Extensions</h2>
+        <p>The Klipo keyboard reads only the history snapshot provided by the main app. Text insertion does not require Full Access. Full Access is used when you explicitly choose to copy an image from the keyboard to the system clipboard. The share extension processes content only after you choose “Save to Klipo” from the system share sheet.</p>
+        <h2>4. System Permissions</h2>
+        <ul><li>Clipboard access, when needed to save or reuse content.</li><li>Full Access for the iOS keyboard, when you choose to copy images.</li><li>Photo Library add access, when you choose to save an image.</li><li>Accessibility permission on macOS, for optional automatic paste after an explicit action.</li><li>Login item permission on macOS, if you enable launch at login.</li><li>iCloud access, if you enable synchronization.</li></ul>
+        <h2>5. Purchases</h2>
+        <p>Purchases, subscriptions, trials, and restoration are processed by Apple through the App Store and StoreKit. We do not receive your card number, Apple Account password, or full payment credentials. Klipo reads verified entitlement status to unlock purchased features.</p>
+        <h2>6. Sharing of Information</h2>
+        <p>We do not sell, rent, or trade personal information. Information may be handled by Apple when you use iCloud, App Store, or StoreKit services; by your email provider when you contact support; or when disclosure is required by law or necessary to protect users, the developer, or the public.</p>
+        <h2>7. Your Controls</h2>
+        <p>You can disable iCloud sync, clear history, adjust retention, manage excluded apps, remove pinboards, disable launch at login, or revoke system permissions in device settings. Deleting the app or removing its iCloud data may remove local or synchronized data.</p>
+        <h2>8. Website Privacy</h2>
+        <p>This static website does not use advertising cookies, behavioral analytics, account sign-in, or a contact database. If you email us, your email provider processes the message according to its own terms.</p>
+        <h2>9. Children’s Privacy</h2>
+        <p>Klipo is not directed to children, and we do not knowingly collect personal information from children.</p>
+        <h2>10. Changes and Contact</h2>
+        <p>We may update this policy as Klipo or legal requirements change. For privacy questions, contact <a href="mailto:fewerapp@gmail.com">fewerapp@gmail.com</a>.</p>
+      </div>
 
-      <h2>1. Information Klipo Processes</h2>
-      <p>To provide clipboard history, pinboards, search, sync, and paste features, Klipo may process the following information on your Mac:</p>
-      <ul>
-        <li>Clipboard content, such as text, links, colors, image previews, and file paths.</li>
-        <li>Pinboards, tags, pinned states, retention settings, theme settings, shortcuts, language, and panel display preferences.</li>
-        <li>Local metadata used for display and search, such as source app name, app icon, file name, or file path.</li>
-        <li>Purchase and entitlement status used to unlock Pro features.</li>
-        <li>Your email address and message content if you contact us by email.</li>
-      </ul>
-
-      <h2>2. Local Storage and iCloud Sync</h2>
-      <p>Klipo primarily stores clipboard history and settings on your Mac. If you enable iCloud sync, relevant app data is synced through Apple CloudKit to your own iCloud account so that it can be available between your Macs.</p>
-      <p>We do not operate a separate server to collect or sell your clipboard history. iCloud sync is provided by Apple, and the transmission, storage, and account handling of iCloud data are governed by Apple’s privacy policy and iCloud terms.</p>
-
-      <h2>3. System Permissions</h2>
-      <p>Klipo may request, use, or direct you to enable the following system permissions:</p>
-      <ul>
-        <li>Clipboard access, to read and save content you copy.</li>
-        <li>Accessibility permission on macOS, to support global shortcuts, return focus to the previous app, and simulate Cmd+V for automatic paste.</li>
-        <li>Login item permission, to launch Klipo automatically in the background after sign-in.</li>
-        <li>User-selected file access, to read necessary information when you choose apps or files.</li>
-      </ul>
-
-      <h2>4. Purchases and Subscriptions</h2>
-      <p>Purchases, subscriptions, free trials, and purchase restoration are processed by Apple App Store and StoreKit. We do not receive your credit card number, payment account password, or full payment credentials. Klipo only reads the transaction and entitlement status returned by Apple to unlock Pro features.</p>
-
-      <h2>5. How Information Is Used</h2>
-      <p>The information described above is used only to provide, maintain, and improve Klipo’s core features, including clipboard history display, search, pinboard organization, Mac-to-Mac sync, purchase restoration, troubleshooting, and user support.</p>
-
-      <h2>6. Sharing of Information</h2>
-      <p>We do not sell, rent, or trade your personal information. Information may be handled by third-party services only in the following situations:</p>
-      <ul>
-        <li>When you use features provided by Apple, such as iCloud sync, App Store purchases, or StoreKit purchase restoration.</li>
-        <li>When you voluntarily contact us by email or open external links from the app.</li>
-        <li>When disclosure is required to comply with applicable law, legal process, or a valid government request.</li>
-        <li>When necessary to protect the rights, safety, or security of users, the developer, or the public.</li>
-      </ul>
-
-      <h2>7. Your Controls</h2>
-      <p>You can disable iCloud sync, clear clipboard history, adjust history retention, manage excluded apps, disable launch at login, or revoke system permissions such as Accessibility and iCloud access in system settings. Deleting the app or removing iCloud data may remove related local or synced data.</p>
-
-      <h2>8. Children’s Privacy</h2>
-      <p>Klipo is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided personal information to us, please contact us using the email address below.</p>
-
-      <h2>9. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy as Klipo changes, as legal requirements evolve, or for operational reasons. Updated versions will be made available through the in-app link or this webpage. The “Last updated” date indicates when the latest version took effect.</p>
-
-      <h2>10. Contact Us</h2>
-      <p>If you have questions about this Privacy Policy or how Klipo handles data, contact us at <a href="mailto:fewerapp@gmail.com">fewerapp@gmail.com</a>.</p>
-    </div>
-  </div>
+      <div data-lang="zh">
+        <p>Klipo 轻贴是一款适用于 iPhone、iPad 与 Mac 的剪贴板管理工具。我们将产品设计为：剪贴内容保留在你的设备中，并仅在你主动开启后同步到你的 Apple iCloud 账户。本政策说明轻贴处理哪些信息以及你拥有的控制方式。</p>
+        <h2>1. 轻贴处理的信息</h2>
+        <p>为提供剪贴历史、搜索、固定板、系统扩展、同步与粘贴功能，轻贴可能处理：</p>
+        <ul><li>文字、链接、颜色、图片数据或预览、文件路径等剪贴内容。</li><li>固定板、固定状态、保留期限、主题、语言、快捷键和显示偏好。</li><li>用于展示与搜索的本机元数据，例如来源 App 名称、图标、文件名或路径。</li><li>用于解锁 Pro 功能的购买与权益状态。</li><li>你在联系支持时主动提供的信息。</li></ul>
+        <h2>2. 本机存储与 iCloud 同步</h2>
+        <p>轻贴主要在你的设备上保存历史与设置。开启 iCloud 同步后，支持的数据会通过 Apple CloudKit 同步到你的 iCloud 账户。轻贴不运营收集或出售剪贴历史的独立服务器。</p>
+        <h2>3. 键盘与分享扩展</h2>
+        <p>Klipo 键盘仅读取主 App 提供的历史快照。插入文字不需要“完全访问”；仅当你主动选择从键盘复制图片到系统剪贴板时使用该权限。分享扩展仅在你从系统分享菜单主动选择“保存到 Klipo”后处理该次分享内容。</p>
+        <h2>4. 系统权限</h2>
+        <ul><li>在保存或重新使用内容时需要的剪贴板访问。</li><li>从 iOS 键盘复制图片时需要的“完全访问”。</li><li>主动保存图片时需要的照片图库添加权限。</li><li>Mac 上执行可选自动粘贴时需要的辅助功能权限。</li><li>你开启登录时启动后使用的 Mac 登录项权限。</li><li>你开启同步后使用的 iCloud 权限。</li></ul>
+        <h2>5. 购买</h2>
+        <p>购买、订阅、试用与恢复购买由 Apple 通过 App Store 和 StoreKit 处理。我们不会收到你的银行卡号、Apple 账户密码或完整付款凭据。轻贴仅读取经过验证的权益状态以解锁已购买功能。</p>
+        <h2>6. 信息共享</h2>
+        <p>我们不会出售、出租或交易个人信息。使用 iCloud、App Store 或 StoreKit 时，相关信息可能由 Apple 处理；联系支持时由你的邮件服务商处理；法律要求或保护用户、开发者与公众安全时可能依法披露。</p>
+        <h2>7. 你的控制</h2>
+        <p>你可以关闭 iCloud 同步、清空历史、调整保留期限、管理排除 App、删除固定板、关闭登录时启动，或在系统设置中撤销权限。删除 App 或移除其 iCloud 数据可能会删除本机或同步数据。</p>
+        <h2>8. 网站隐私</h2>
+        <p>本静态网站不使用广告 Cookie、行为分析、账户登录或联系数据库。如果你发送邮件，邮件将由你所使用的邮件服务商依据其条款处理。</p>
+        <h2>9. 儿童隐私</h2>
+        <p>轻贴并非面向儿童设计，我们不会故意收集儿童的个人信息。</p>
+        <h2>10. 变更与联系</h2>
+        <p>我们可能随轻贴功能或法律要求变化更新本政策。如有隐私问题，请联系 <a href="mailto:fewerapp@gmail.com">fewerapp@gmail.com</a>。</p>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="footer-shell"><span>© <span data-current-year></span> Klipo</span><div class="footer-links"><a href="index.html"><span data-lang="zh">产品</span><span data-lang="en">Product</span></a><a href="support.html"><span data-lang="zh">支持</span><span data-lang="en">Support</span></a><a href="terms-of-use.html"><span data-lang="zh">用户协议</span><span data-lang="en">Terms of Use</span></a></div></div></footer>
+  <script src="assets/site.js"></script>
 </body>
 </html>

@@ -1,116 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Klipo Terms of Use">
+  <meta name="theme-color" content="#0a7cff">
   <title>Klipo Terms of Use</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f7f8fa;
-      --paper: #ffffff;
-      --text: #1f2328;
-      --muted: #6b7280;
-      --line: #e5e7eb;
-      --accent: #0a84ff;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0f1115;
-        --paper: #171a21;
-        --text: #f4f5f7;
-        --muted: #a6adbb;
-        --line: #2a2f3a;
-        --accent: #60a5fa;
-      }
-    }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
-    }
-    .page {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 48px 20px 72px;
-    }
-    .card {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 34px;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
-    }
-    h1 {
-      margin: 0 0 6px;
-      font-size: 30px;
-      line-height: 1.25;
-    }
-    h2 {
-      margin: 30px 0 8px;
-      font-size: 19px;
-    }
-    p, ul {
-      margin: 8px 0;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    .meta {
-      color: var(--muted);
-      margin-bottom: 24px;
-    }
-    a {
-      color: var(--accent);
-    }
-  </style>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>
+    try {
+      document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
+    } catch (_) {}
+  </script>
 </head>
-<body>
-  <div class="page">
-    <div class="card">
-      <h1>Klipo Terms of Use</h1>
-      <p class="meta">Last updated: July 4, 2026</p>
+<body data-title-zh="Klipo 用户协议" data-title-en="Klipo Terms of Use">
+  <a class="skip-link" href="#main"><span data-lang="zh">跳到主要内容</span><span data-lang="en">Skip to content</span></a>
+  <header class="site-header"><nav class="nav-shell" aria-label="Primary navigation"><a class="brand" href="index.html" aria-label="Klipo home"><img src="assets/app-icon.png" alt="" width="38" height="38"><span>Klipo</span></a><div class="nav-links"><a class="nav-link" href="index.html"><span data-lang="zh">产品</span><span data-lang="en">Product</span></a><a class="nav-link" href="support.html"><span data-lang="zh">支持</span><span data-lang="en">Support</span></a><a class="nav-link" href="privacy-policy.html"><span data-lang="zh">隐私</span><span data-lang="en">Privacy</span></a><a class="nav-link" href="terms-of-use.html" aria-current="page"><span data-lang="zh">条款</span><span data-lang="en">Terms</span></a><button class="language-toggle" type="button" data-language-toggle aria-label="切换到中文">中文</button></div></nav></header>
+  <main id="main" class="legal-shell">
+    <article class="legal-card">
+      <h1><span data-lang="zh">Klipo 用户协议</span><span data-lang="en">Klipo Terms of Use</span></h1>
+      <p class="legal-meta"><span data-lang="zh">最后更新：2026 年 7 月 28 日</span><span data-lang="en">Last updated: July 28, 2026</span></p>
 
-      <p>Welcome to Klipo. These Terms of Use apply to your download, installation, access, and use of Klipo for macOS and related features. By using Klipo, you agree to these terms.</p>
+      <div data-lang="en">
+        <p>These Terms apply to your download, installation, access, and use of Klipo on iPhone, iPad, Mac, and related extensions. By using Klipo, you agree to these Terms.</p>
+        <h2>1. The Service</h2><p>Klipo provides clipboard history, pinboards, search, optional iCloud sync, an iOS keyboard, a share extension, Mac panels and shortcuts, and optional Pro features. Features may vary by device, operating system, permissions, storefront, and app version.</p>
+        <h2>2. Requirements</h2><ul><li>You need a compatible Apple device and supported operating system.</li><li>Some features require iCloud, App Store, StoreKit, Full Access for image copying from the keyboard, Accessibility permission on Mac, or other system capabilities.</li><li>You are responsible for ensuring that content you copy, store, sync, or paste is lawful and that you have the right to use it.</li></ul>
+        <h2>3. Your Responsibilities</h2><p>You may not use Klipo for illegal, infringing, fraudulent, abusive, harmful, or security-compromising activities, or in a way that violates third-party rights or service terms. You are responsible for managing your device, Apple Account, iCloud account, permissions, and clipboard history.</p>
+        <h2>4. Purchases, Subscriptions, and Refunds</h2><p>Klipo may offer subscriptions, lifetime purchases, trials, or other paid items. Apple handles App Store purchases, renewals, cancellations, and refunds. Prices, trial eligibility, and availability are shown on the system purchase sheet and may vary by storefront.</p>
+        <h2>5. iCloud Sync</h2><p>If enabled, Klipo syncs supported data through Apple CloudKit. Sync can be delayed, interrupted, conflicted, or unavailable due to Apple service status, network conditions, account status, storage, system behavior, or device settings.</p>
+        <h2>6. Extensions and Automatic Paste</h2><p>The keyboard and share extension work within Apple’s extension rules and system limitations. On Mac, optional automatic paste writes the selected item to the system clipboard, attempts to restore the previous app’s focus, and sends one Command-V after an explicit user action. Target apps may restrict this behavior; manual paste remains available.</p>
+        <h2>7. Intellectual Property</h2><p>Klipo’s name, interface, icons, code, design, and related materials are protected by intellectual property laws. Except where permitted by law, you may not copy, modify, reverse engineer, distribute, rent, sell, or exploit Klipo.</p>
+        <h2>8. Disclaimer</h2><p>Klipo is provided “as is” and “as available.” We do not guarantee uninterrupted, error-free operation or compatibility with every app. Clipboard behavior, permissions, iCloud, purchases, extensions, and target-app focus can be affected by Apple and third parties.</p>
+        <h2>9. Limitation of Liability</h2><p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, including data loss, lost profits, or business interruption. Where liability cannot be excluded, total liability is limited to the amount paid for the relevant service unless applicable law requires otherwise.</p>
+        <h2>10. Changes and Contact</h2><p>We may update these Terms as Klipo or legal requirements change. Continued use after an update means you accept the updated Terms. Questions can be sent to <a href="mailto:fewerapp@gmail.com">fewerapp@gmail.com</a>.</p>
+      </div>
 
-      <h2>1. The Service</h2>
-      <p>Klipo is a clipboard manager that may provide clipboard history, pinboards, search, iCloud sync between Macs, global shortcuts, double-click paste, and Pro features unlocked through subscription or one-time purchase. Available features may vary by system version, device, permissions, and app version.</p>
-
-      <h2>2. Requirements</h2>
-      <ul>
-        <li>You need a compatible Apple device and supported operating system version.</li>
-        <li>Some features require iCloud, App Store, StoreKit, Accessibility permission, Full Access for the keyboard extension, or other system capabilities.</li>
-        <li>You are responsible for ensuring that the content you copy, store, sync, or paste is lawful and that you have the right to use it.</li>
-      </ul>
-
-      <h2>3. Your Responsibilities</h2>
-      <p>You may not use Klipo for illegal, infringing, fraudulent, abusive, harmful, or security-compromising activities, or in a way that violates third-party rights or service terms. You are responsible for managing your Mac, Apple ID, iCloud account, system permissions, and deciding what content is appropriate to keep in clipboard history.</p>
-
-      <h2>4. Purchases, Subscriptions, and Refunds</h2>
-      <p>Klipo may offer annual subscriptions, lifetime purchases, free trials, or other paid items. All App Store purchases, renewals, cancellations, and refunds are handled by Apple and are subject to Apple’s payment, subscription, and refund rules. You can manage or cancel subscriptions through your Apple ID subscription settings. If you cancel, access generally continues until the end of the current paid period.</p>
-
-      <h2>5. iCloud Sync and Data</h2>
-      <p>If you enable iCloud sync, Klipo syncs relevant app data through Apple CloudKit between your Macs. Sync may be affected by Apple service status, network conditions, account status, storage availability, system behavior, and device settings. You understand that sync may be delayed, interrupted, conflicted, or unavailable at times.</p>
-
-      <h2>6. Permissions and Automatic Paste</h2>
-      <p>Double-click paste works by writing the selected item back to the system clipboard, attempting to return focus to the previous app, and simulating Cmd+V. This feature depends on macOS Accessibility permission and the target app’s focus behavior. If permission is not granted or if a target app blocks input, automatic paste may fail, but you can still paste manually.</p>
-
-      <h2>7. Intellectual Property</h2>
-      <p>Klipo’s name, interface, icons, code, design, and related materials are protected by intellectual property laws. Unless allowed by law or expressly permitted by us, you may not copy, modify, reverse engineer, distribute, rent, sell, or otherwise exploit any part of Klipo.</p>
-
-      <h2>8. Disclaimer</h2>
-      <p>Klipo is provided “as is” and “as available.” We try to keep the app stable and useful, but we do not guarantee that it will be uninterrupted, error-free, suitable for every purpose, or compatible with every third-party app. Clipboard behavior, permissions, iCloud, App Store purchases, and third-party app focus behavior may be affected by Apple or other third parties.</p>
-
-      <h2>9. Limitation of Liability</h2>
-      <p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, including lost profits, data loss, business interruption, or damages resulting from your use of or inability to use Klipo. Where liability cannot be excluded, our total liability is limited to the amount you paid for the relevant service, unless applicable law requires otherwise.</p>
-
-      <h2>10. Changes to These Terms</h2>
-      <p>We may update these Terms as Klipo changes, as legal requirements evolve, or for operational reasons. Updated terms will be made available through the in-app link or this webpage. Continued use of Klipo after an update means you accept the updated terms.</p>
-
-      <h2>11. Contact</h2>
-      <p>If you have questions about these Terms, contact us at <a href="mailto:fewerapp@gmail.com">fewerapp@gmail.com</a>.</p>
-    </div>
-  </div>
+      <div data-lang="zh">
+        <p>本协议适用于你在 iPhone、iPad、Mac 及相关系统扩展中下载、安装、访问和使用 Klipo 轻贴。使用轻贴即表示你同意本协议。</p>
+        <h2>1. 服务内容</h2><p>轻贴提供剪贴历史、固定板、搜索、可选 iCloud 同步、iOS 键盘、分享扩展、Mac 面板与快捷操作，以及可选 Pro 功能。功能可能因设备、系统版本、权限、商店地区和 App 版本而不同。</p>
+        <h2>2. 使用要求</h2><ul><li>你需要兼容的 Apple 设备和受支持的系统版本。</li><li>部分功能需要 iCloud、App Store、StoreKit、键盘图片复制所需的“完全访问”、Mac 辅助功能权限或其他系统能力。</li><li>你应确保复制、存储、同步或粘贴的内容合法，并拥有相应使用权。</li></ul>
+        <h2>3. 用户责任</h2><p>你不得将轻贴用于违法、侵权、欺诈、滥用、有害或危害安全的活动，也不得侵犯第三方权利或服务条款。你有责任管理自己的设备、Apple 账户、iCloud 账户、系统权限和剪贴历史。</p>
+        <h2>4. 购买、订阅与退款</h2><p>轻贴可能提供订阅、永久买断、试用或其他付费项目。App Store 购买、续订、取消和退款均由 Apple 处理。价格、试用资格和可用性以系统购买确认页为准，并可能因商店地区而不同。</p>
+        <h2>5. iCloud 同步</h2><p>开启后，轻贴通过 Apple CloudKit 同步支持的数据。同步可能因 Apple 服务状态、网络、账户状态、存储空间、系统行为或设备设置出现延迟、中断、冲突或暂时不可用。</p>
+        <h2>6. 系统扩展与自动粘贴</h2><p>键盘和分享扩展受 Apple 扩展规则与系统限制约束。Mac 可选自动粘贴会在用户明确操作后，将选中项目写回系统剪贴板、尝试恢复上一个 App 的焦点，并执行一次 Command-V。目标 App 可能限制该行为，此时仍可手动粘贴。</p>
+        <h2>7. 知识产权</h2><p>轻贴的名称、界面、图标、代码、设计及相关材料受知识产权法律保护。除法律允许外，你不得复制、修改、反向工程、分发、出租、出售或利用轻贴。</p>
+        <h2>8. 免责声明</h2><p>轻贴按“现状”和“可用状态”提供。我们不保证服务始终不中断、没有错误或兼容所有 App。剪贴板行为、权限、iCloud、购买、系统扩展和目标 App 焦点可能受 Apple 或第三方影响。</p>
+        <h2>9. 责任限制</h2><p>在法律允许的最大范围内，我们不对间接、附带、特殊、后果性或惩罚性损失负责，包括数据丢失、利润损失或业务中断。法律不允许排除责任时，总责任以你为相关服务支付的金额为限，除非适用法律另有要求。</p>
+        <h2>10. 变更与联系</h2><p>我们可能随轻贴功能或法律要求变化更新本协议。更新后继续使用即表示接受新协议。如有问题，请联系 <a href="mailto:fewerapp@gmail.com">fewerapp@gmail.com</a>。</p>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="footer-shell"><span>© <span data-current-year></span> Klipo</span><div class="footer-links"><a href="index.html"><span data-lang="zh">产品</span><span data-lang="en">Product</span></a><a href="support.html"><span data-lang="zh">支持</span><span data-lang="en">Support</span></a><a href="privacy-policy.html"><span data-lang="zh">隐私政策</span><span data-lang="en">Privacy Policy</span></a></div></div></footer>
+  <script src="assets/site.js"></script>
 </body>
 </html>

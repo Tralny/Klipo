@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Klipo 轻贴支持中心：键盘扩展、分享扩展、iCloud 同步、Mac 自动粘贴与常见问题。">
+  <meta name="theme-color" content="#0a7cff">
+  <title>Klipo 支持中心</title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>
+    try {
+      document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
+    } catch (_) {}
+  </script>
+</head>
+<body data-title-zh="Klipo 支持中心" data-title-en="Klipo Support">
+  <a class="skip-link" href="#main"><span data-lang="zh">跳到主要内容</span><span data-lang="en">Skip to content</span></a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Klipo home"><img src="assets/app-icon.png" alt="" width="38" height="38"><span>Klipo</span></a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html"><span data-lang="zh">产品</span><span data-lang="en">Product</span></a>
+        <a class="nav-link" href="support.html" aria-current="page"><span data-lang="zh">支持</span><span data-lang="en">Support</span></a>
+        <a class="nav-link" href="privacy-policy.html"><span data-lang="zh">隐私</span><span data-lang="en">Privacy</span></a>
+        <a class="nav-link" href="terms-of-use.html"><span data-lang="zh">条款</span><span data-lang="en">Terms</span></a>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to English">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-shell">
+      <section class="page-hero">
+        <p class="eyebrow reveal">Klipo Support</p>
+        <h1 class="reveal"><span data-lang="zh">让轻贴按你的方式工作。</span><span data-lang="en">Make Klipo work your way.</span></h1>
+        <p class="reveal"><span data-lang="zh">从首次设置到跨设备同步，这里提供清晰、可执行的解决步骤。</span><span data-lang="en">Clear, actionable steps for setup, extensions, sync, and everyday troubleshooting.</span></p>
+      </section>
+
+      <section class="support-grid reveal" aria-label="Support topics">
+        <article class="support-card"><h2><span data-lang="zh">Klipo 键盘</span><span data-lang="en">Klipo Keyboard</span></h2><p><span data-lang="zh">在其他 App 中插入最近的文字、链接与颜色。</span><span data-lang="en">Insert recent text, links, and colors in other apps.</span></p><p><a href="#keyboard"><span data-lang="zh">查看设置</span><span data-lang="en">View setup</span></a></p></article>
+        <article class="support-card"><h2><span data-lang="zh">分享扩展</span><span data-lang="en">Share Extension</span></h2><p><span data-lang="zh">从 Safari、照片等 App 主动保存内容。</span><span data-lang="en">Save content from Safari, Photos, and more.</span></p><p><a href="#share"><span data-lang="zh">查看设置</span><span data-lang="en">View setup</span></a></p></article>
+        <article class="support-card"><h2><span data-lang="zh">iCloud 同步</span><span data-lang="en">iCloud Sync</span></h2><p><span data-lang="zh">在 iPhone、iPad 与 Mac 之间同步支持的内容。</span><span data-lang="en">Sync supported content across iPhone, iPad, and Mac.</span></p><p><a href="#icloud"><span data-lang="zh">排查同步</span><span data-lang="en">Troubleshoot sync</span></a></p></article>
+      </section>
+
+      <section class="support-section" id="keyboard">
+        <h2><span data-lang="zh">添加并使用 Klipo 键盘</span><span data-lang="en">Add and use the Klipo keyboard</span></h2>
+        <div class="steps">
+          <article class="step-card reveal"><span class="step-number">1</span><div><h3><span data-lang="zh">打开键盘设置</span><span data-lang="en">Open Keyboard settings</span></h3><p><span data-lang="zh">前往“系统设置”→“通用”→“键盘”→“键盘”→“添加新键盘”，选择 Klipo。</span><span data-lang="en">Go to Settings → General → Keyboard → Keyboards → Add New Keyboard, then choose Klipo.</span></p></div></article>
+          <article class="step-card reveal"><span class="step-number">2</span><div><h3><span data-lang="zh">按需要开启完全访问</span><span data-lang="en">Enable Full Access only when needed</span></h3><p><span data-lang="zh">插入文字不依赖完全访问。复制图片到系统剪贴板时，需要为 Klipo 键盘开启“允许完全访问”。</span><span data-lang="en">Text insertion does not require Full Access. Copying images to the system clipboard requires Full Access for the Klipo keyboard.</span></p></div></article>
+          <article class="step-card reveal"><span class="step-number">3</span><div><h3><span data-lang="zh">切换并选择内容</span><span data-lang="en">Switch and select</span></h3><p><span data-lang="zh">在输入框中长按或轻点地球图标切换到 Klipo。轻点一条文字、链接或颜色即可插入；图片会复制到系统剪贴板。</span><span data-lang="en">In a text field, touch and hold or tap the globe key to switch to Klipo. Tap text, a link, or a color to insert it; images are copied to the system clipboard.</span></p></div></article>
+        </div>
+      </section>
+
+      <section class="support-section" id="share">
+        <h2><span data-lang="zh">使用“保存到 Klipo”</span><span data-lang="en">Use “Save to Klipo”</span></h2>
+        <div class="steps">
+          <article class="step-card reveal"><span class="step-number">1</span><div><h3><span data-lang="zh">打开系统分享菜单</span><span data-lang="en">Open the system share sheet</span></h3><p><span data-lang="zh">在 Safari、照片或其他支持分享的 App 中选择文字、链接或图片，然后轻点分享按钮。</span><span data-lang="en">In Safari, Photos, or another app with sharing, select text, a link, or an image and tap Share.</span></p></div></article>
+          <article class="step-card reveal"><span class="step-number">2</span><div><h3><span data-lang="zh">选择“保存到 Klipo”</span><span data-lang="en">Choose “Save to Klipo”</span></h3><p><span data-lang="zh">如果没有看到该扩展，请滑到操作列表末尾，选择“更多”并把“保存到 Klipo”加入常用。</span><span data-lang="en">If the action is missing, scroll to the end of the actions list, choose More, and add “Save to Klipo” to Favorites.</span></p></div></article>
+          <article class="step-card reveal"><span class="step-number">3</span><div><h3><span data-lang="zh">回到轻贴完成导入</span><span data-lang="en">Return to Klipo to finish import</span></h3><p><span data-lang="zh">分享内容会先进入安全的待处理区域；回到主 App 后由轻贴统一写入历史并按你的同步设置处理。</span><span data-lang="en">Shared content is held temporarily, then imported by the main Klipo app according to your sync settings when you return.</span></p></div></article>
+        </div>
+      </section>
+
+      <section class="support-section" id="icloud">
+        <h2><span data-lang="zh">iCloud 同步排查</span><span data-lang="en">Troubleshoot iCloud sync</span></h2>
+        <div class="faq-list">
+          <article class="faq-item reveal"><h3><span data-lang="zh">确认使用同一个 Apple 账户</span><span data-lang="en">Use the same Apple Account</span></h3><p><span data-lang="zh">各设备需要登录同一个 iCloud 账户，并在系统设置中为 iCloud Drive 和 Klipo 开启访问。</span><span data-lang="en">Devices must use the same iCloud account, with iCloud Drive and Klipo access enabled in system settings.</span></p></article>
+          <article class="faq-item reveal"><h3><span data-lang="zh">确认轻贴内的同步开关</span><span data-lang="en">Check the in-app sync setting</span></h3><p><span data-lang="zh">在轻贴设置中开启 iCloud 同步。首次同步或大量图片同步可能需要更多时间，保持网络连接并让 App 完成一次前台刷新。</span><span data-lang="en">Enable iCloud sync in Klipo settings. Initial sync and large images can take longer; keep a network connection and allow the app to refresh in the foreground.</span></p></article>
+          <article class="faq-item reveal"><h3><span data-lang="zh">同步不可用时内容仍保留在本机</span><span data-lang="en">Local history remains available</span></h3><p><span data-lang="zh">如果 CloudKit 暂时不可用，轻贴会继续使用本机历史；服务恢复后再尝试同步。</span><span data-lang="en">If CloudKit is temporarily unavailable, Klipo continues using local history and retries when service is available.</span></p></article>
+        </div>
+      </section>
+
+      <section class="support-section" id="mac-paste">
+        <h2><span data-lang="zh">Mac 自动粘贴</span><span data-lang="en">Automatic paste on Mac</span></h2>
+        <div class="faq-list">
+          <article class="faq-item reveal"><h3><span data-lang="zh">为什么需要辅助功能权限？</span><span data-lang="en">Why is Accessibility permission needed?</span></h3><p><span data-lang="zh">双击粘贴需要把内容写回系统剪贴板、恢复上一个 App 的焦点并执行一次 Command-V。没有该权限时，仍可复制后手动粘贴。</span><span data-lang="en">Double-click paste writes the item to the clipboard, restores focus to the previous app, and sends one Command-V. Without permission, you can still copy and paste manually.</span></p></article>
+          <article class="faq-item reveal"><h3><span data-lang="zh">授权后仍然不能自动粘贴</span><span data-lang="en">Automatic paste still does not work</span></h3><p><span data-lang="zh">在“系统设置”→“隐私与安全性”→“辅助功能”中关闭再重新开启 Klipo，然后完全退出并重新打开轻贴。部分目标 App 可能限制模拟键盘输入。</span><span data-lang="en">In System Settings → Privacy &amp; Security → Accessibility, turn Klipo off and on again, then fully quit and reopen it. Some target apps may restrict simulated keyboard input.</span></p></article>
+        </div>
+      </section>
+
+      <section class="support-section" id="faq">
+        <h2><span data-lang="zh">常见问题</span><span data-lang="en">Frequently asked questions</span></h2>
+        <div class="faq-list">
+          <article class="faq-item reveal"><h3><span data-lang="zh">轻贴会把剪贴内容上传到自己的服务器吗？</span><span data-lang="en">Does Klipo upload clipboard content to its own server?</span></h3><p><span data-lang="zh">不会。轻贴不运营独立的剪贴板服务器。开启同步时，支持的数据通过 Apple CloudKit 存储在你的 iCloud 中。</span><span data-lang="en">No. Klipo does not operate a separate clipboard server. When sync is enabled, supported data is stored in your iCloud through Apple CloudKit.</span></p></article>
+          <article class="faq-item reveal"><h3><span data-lang="zh">为什么键盘里看不到刚分享的内容？</span><span data-lang="en">Why is newly shared content missing from the keyboard?</span></h3><p><span data-lang="zh">先回到 Klipo 主 App 完成导入并刷新键盘快照，然后重新切换到 Klipo 键盘。</span><span data-lang="en">Return to the main Klipo app to complete import and refresh the keyboard snapshot, then switch back to the Klipo keyboard.</span></p></article>
+          <article class="faq-item reveal"><h3><span data-lang="zh">如何管理或恢复购买？</span><span data-lang="en">How do I manage or restore purchases?</span></h3><p><span data-lang="zh">在轻贴设置的 Pro 页面选择“恢复购买”。订阅管理与退款由 Apple 处理，可在 Apple 账户的订阅设置中管理。</span><span data-lang="en">Choose Restore Purchases from the Pro page in Klipo settings. Apple handles subscription management and refunds through your Apple Account.</span></p></article>
+        </div>
+      </section>
+
+      <section class="contact-panel reveal" id="contact">
+        <h2><span data-lang="zh">仍然需要帮助？</span><span data-lang="en">Still need help?</span></h2>
+        <p><span data-lang="zh">邮件中请写明设备型号、系统版本、Klipo 版本、问题发生前后的操作以及能否稳定复现。请不要发送剪贴板中的敏感内容。</span><span data-lang="en">Include your device model, system version, Klipo version, steps before the issue, and whether it is reproducible. Do not send sensitive clipboard content.</span></p>
+        <a class="button" href="mailto:fewerapp@gmail.com?subject=Klipo%20Support"><span data-lang="zh">发送邮件至 fewerapp@gmail.com</span><span data-lang="en">Email fewerapp@gmail.com</span></a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-shell"><span>© <span data-current-year></span> Klipo</span><div class="footer-links"><a href="index.html"><span data-lang="zh">产品</span><span data-lang="en">Product</span></a><a href="privacy-policy.html"><span data-lang="zh">隐私政策</span><span data-lang="en">Privacy Policy</span></a><a href="terms-of-use.html"><span data-lang="zh">用户协议</span><span data-lang="en">Terms of Use</span></a></div></div></footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

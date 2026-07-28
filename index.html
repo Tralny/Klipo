@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Klipo 轻贴是一款面向 iPhone、iPad 与 Mac 的跨设备剪贴板工具，提供键盘扩展、分享扩展、固定板、搜索与可选 iCloud 同步。">
+  <meta name="theme-color" content="#0a7cff">
+  <meta property="og:title" content="Klipo 轻贴 · 跨设备剪贴板">
+  <meta property="og:description" content="在 iPhone、iPad 与 Mac 之间保存、整理并重新使用你的剪贴内容。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/app-icon.png">
+  <title>Klipo 轻贴 · 跨设备剪贴板</title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>
+    try {
+      document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
+    } catch (_) {}
+  </script>
+</head>
+<body data-title-zh="Klipo 轻贴 · 跨设备剪贴板" data-title-en="Klipo · A clipboard that moves with you">
+  <a class="skip-link" href="#main">
+    <span data-lang="zh">跳到主要内容</span><span data-lang="en">Skip to content</span>
+  </a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Klipo home">
+        <img src="assets/app-icon.png" alt="" width="38" height="38">
+        <span>Klipo</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="#features" aria-current="page"><span data-lang="zh">产品</span><span data-lang="en">Product</span></a>
+        <a class="nav-link" href="support.html"><span data-lang="zh">支持</span><span data-lang="en">Support</span></a>
+        <a class="nav-link" href="privacy-policy.html"><span data-lang="zh">隐私</span><span data-lang="en">Privacy</span></a>
+        <a class="nav-link" href="terms-of-use.html"><span data-lang="zh">条款</span><span data-lang="en">Terms</span></a>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to English">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-shell">
+      <section class="hero">
+        <img class="hero-icon reveal" src="assets/app-icon.png" alt="Klipo app icon" width="108" height="108">
+        <p class="eyebrow reveal">Klipo for iPhone · iPad · Mac</p>
+        <h1 class="reveal">
+          <span data-lang="zh">复制一次，<br>随处继续。</span>
+          <span data-lang="en">Copy once.<br>Keep moving.</span>
+        </h1>
+        <p class="hero-copy reveal">
+          <span data-lang="zh">轻贴把文字、链接、颜色与图片整理成清晰的历史记录，通过键盘和分享扩展，在需要的时候快速找回。</span>
+          <span data-lang="en">Klipo keeps text, links, colors, and images in a clear history, then brings them back through its keyboard and share extensions.</span>
+        </p>
+        <ul class="platform-row reveal" aria-label="Supported platforms">
+          <li>iPhone</li><li>iPad</li><li>Mac</li><li>iCloud</li>
+        </ul>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#features"><span data-lang="zh">了解轻贴</span><span data-lang="en">Explore Klipo</span></a>
+          <a class="button button-secondary" href="support.html"><span data-lang="zh">获得支持</span><span data-lang="en">Get support</span></a>
+        </div>
+        <figure class="hero-visual reveal">
+          <img src="assets/mac-klipo.jpg" alt="Klipo clipboard history panel running on a Mac" width="1800" height="1125">
+        </figure>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span data-lang="zh">一个连续的工作流</span><span data-lang="en">One continuous workflow</span></p>
+          <h2><span data-lang="zh">不是另一份列表。<br>是内容重新流动的方式。</span><span data-lang="en">More than a list.<br>A way to keep content moving.</span></h2>
+          <p><span data-lang="zh">从保存、整理到再次使用，每一步都围绕真实的跨设备工作场景设计。</span><span data-lang="en">Save, organize, and reuse content across your Apple devices without breaking focus.</span></p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card wide reveal">
+            <div class="feature-symbol" aria-hidden="true">⌨</div>
+            <h3><span data-lang="zh">在正在输入的地方，找回最近内容。</span><span data-lang="en">Bring recent content into the field you are using.</span></h3>
+            <p><span data-lang="zh">切换到 Klipo 键盘即可插入文字、链接和颜色；图片可复制到系统剪贴板，并在兼容的 App 中拖放使用。</span><span data-lang="en">Switch to the Klipo keyboard to insert text, links, and colors. Copy images to the system clipboard or drag them into compatible apps.</span></p>
+            <div class="phone-showcase" aria-label="Klipo keyboard and pinboard screenshots">
+              <div class="phone-frame"><img src="assets/keyboard.webp" alt="Klipo keyboard showing recent clipboard items" width="722" height="1568"></div>
+              <div class="phone-frame"><img src="assets/pinboards.webp" alt="Klipo pinboard selector" width="722" height="1568"></div>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-symbol" aria-hidden="true">↗</div>
+            <h3><span data-lang="zh">分享即保存</span><span data-lang="en">Save from Share</span></h3>
+            <p><span data-lang="zh">在系统分享菜单中选择“保存到 Klipo”，文字、链接或图片会进入轻贴，稍后再整理和使用。</span><span data-lang="en">Choose “Save to Klipo” from the system share sheet to keep text, links, or images for later.</span></p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-symbol" aria-hidden="true">▤</div>
+            <h3><span data-lang="zh">iPad 多栏工作台</span><span data-lang="en">An iPad workspace</span></h3>
+            <p><span data-lang="zh">侧边栏、内容区与详情区会根据窗口宽度自动调整，在全屏、分屏和台前调度中保持清晰。</span><span data-lang="en">Sidebar, history, and detail views adapt to the available width across full screen, Split View, and Stage Manager.</span></p>
+          </article>
+
+          <article class="feature-card wide reveal">
+            <div class="feature-symbol" aria-hidden="true">☁</div>
+            <h3><span data-lang="zh">从 Mac 复制，在移动设备继续。</span><span data-lang="en">Copy on Mac. Continue on your mobile devices.</span></h3>
+            <p><span data-lang="zh">开启 iCloud 同步后，轻贴通过 Apple CloudKit 在你的设备之间同步支持的剪贴内容、固定状态与固定板。轻贴不运营额外的剪贴板服务器。</span><span data-lang="en">When iCloud sync is enabled, Klipo uses Apple CloudKit to sync supported clipboard items, pinned states, and pinboards. Klipo does not operate a separate clipboard server.</span></p>
+            <div class="workflow">
+              <div class="workflow-step"><strong><span data-lang="zh">1. 保存</span><span data-lang="en">1. Save</span></strong><span><span data-lang="zh">复制内容或使用分享扩展</span><span data-lang="en">Copy content or use the share extension</span></span></div>
+              <div class="workflow-step"><strong><span data-lang="zh">2. 整理</span><span data-lang="en">2. Organize</span></strong><span><span data-lang="zh">搜索、固定或放入固定板</span><span data-lang="en">Search, pin, or move into a pinboard</span></span></div>
+              <div class="workflow-step"><strong><span data-lang="zh">3. 使用</span><span data-lang="en">3. Reuse</span></strong><span><span data-lang="zh">从 App、键盘或 Mac 面板取回</span><span data-lang="en">Retrieve it from the app, keyboard, or Mac panel</span></span></div>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-symbol" aria-hidden="true">⌕</div>
+            <h3><span data-lang="zh">按内容方式搜索</span><span data-lang="en">Search by meaning and type</span></h3>
+            <p><span data-lang="zh">通过文字搜索和内容类型筛选快速缩小范围；详情页支持中文分词选择，让长文本重新变得可用。</span><span data-lang="en">Narrow results with text and content-type filters. Chinese word segmentation makes long text easier to reuse.</span></p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-symbol" aria-hidden="true">●</div>
+            <h3><span data-lang="zh">固定重要内容</span><span data-lang="en">Pin what matters</span></h3>
+            <p><span data-lang="zh">为工作、灵感或常用回复建立不同固定板，让重要片段不再被新的复制记录淹没。</span><span data-lang="en">Create pinboards for work, ideas, or frequent replies so important snippets do not disappear under new copies.</span></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="privacy-strip reveal">
+          <div>
+            <p class="eyebrow"><span data-lang="zh">隐私优先</span><span data-lang="en">Privacy first</span></p>
+            <h2><span data-lang="zh">你的剪贴内容，留在你的设备与 iCloud。</span><span data-lang="en">Your clipboard stays on your devices and in your iCloud.</span></h2>
+            <p><span data-lang="zh">没有广告 SDK，也不出售剪贴内容。是否启用 iCloud 同步由你决定。</span><span data-lang="en">No ad SDKs and no sale of clipboard content. You decide whether iCloud sync is enabled.</span></p>
+          </div>
+          <div class="privacy-facts">
+            <div class="privacy-fact"><span data-lang="zh">✓ 不运营独立剪贴板服务器</span><span data-lang="en">✓ No separate clipboard server</span></div>
+            <div class="privacy-fact"><span data-lang="zh">✓ iCloud 同步可以随时关闭</span><span data-lang="en">✓ iCloud sync can be disabled</span></div>
+            <div class="privacy-fact"><span data-lang="zh">✓ 系统扩展按需读取内容</span><span data-lang="en">✓ Extensions access content only when needed</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="cta-card reveal">
+          <h2><span data-lang="zh">需要帮助？我们把步骤写清楚了。</span><span data-lang="en">Need help? The steps are ready.</span></h2>
+          <p><span data-lang="zh">查看键盘、分享扩展、iCloud 同步和 Mac 自动粘贴的设置方法。</span><span data-lang="en">Find setup and troubleshooting for the keyboard, share extension, iCloud sync, and automatic paste on Mac.</span></p>
+          <a class="button button-primary" href="support.html"><span data-lang="zh">打开支持中心</span><span data-lang="en">Open Support</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <span>© <span data-current-year></span> Klipo</span>
+      <div class="footer-links">
+        <a href="support.html"><span data-lang="zh">支持</span><span data-lang="en">Support</span></a>
+        <a href="privacy-policy.html"><span data-lang="zh">隐私政策</span><span data-lang="en">Privacy Policy</span></a>
+        <a href="terms-of-use.html"><span data-lang="zh">用户协议</span><span data-lang="en">Terms of Use</span></a>
+        <a href="mailto:fewerapp@gmail.com"><span data-lang="zh">联系</span><span data-lang="en">Contact</span></a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
