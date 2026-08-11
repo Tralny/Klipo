@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="1024x1024" href="assets/app-icon.png?v=20260811">
   <link rel="shortcut icon" type="image/png" href="assets/app-icon.png?v=20260811">
   <link rel="apple-touch-icon" href="assets/app-icon.png?v=20260811">
-  <link rel="stylesheet" href="assets/site.css?v=20260811-2">
+  <link rel="stylesheet" href="assets/site.css?v=20260811-4">
   <script>
     try {
       document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
@@ -61,62 +61,35 @@
           <a class="button button-primary" href="https://apps.apple.com/cn/app/%E8%BD%BB%E8%B4%B4-%E5%88%98%E6%B5%B7%E5%89%AA%E8%B4%B4%E6%9D%BF/id6783726665?mt=12" target="_blank" rel="noopener noreferrer"><span data-lang="zh">免费下载 Mac 版</span><span data-lang="en">Download for Mac</span></a>
           <a class="button button-secondary" href="support.html"><span data-lang="zh">获得支持</span><span data-lang="en">Get support</span></a>
         </div>
-        <figure class="hero-visual reveal">
-          <img src="assets/mac/history.jpg" alt="Klipo clipboard history panel running on a Mac" width="1800" height="1125" decoding="async">
-        </figure>
       </section>
 
       <section class="section" id="features">
         <div class="section-heading reveal">
           <p class="eyebrow"><span data-lang="zh">一个连续的工作流</span><span data-lang="en">One continuous workflow</span></p>
-          <h2><span data-lang="zh">不是另一份列表。<br>是内容重新流动的方式。</span><span data-lang="en">More than a list.<br>A way to keep content moving.</span></h2>
-          <p><span data-lang="zh">从保存、整理到再次使用，每一步都围绕真实的跨设备工作场景设计。</span><span data-lang="en">Save, organize, and reuse content across your Apple devices without breaking focus.</span></p>
+          <h2><span data-lang="zh">保存、整理、再次使用。<br>三件事，一条清晰路径。</span><span data-lang="en">Save, organize, reuse.<br>One clear path.</span></h2>
+          <p><span data-lang="zh">轻贴把剪贴板从临时中转站，变成随时可以回到的内容空间。</span><span data-lang="en">Klipo turns the clipboard from a temporary stop into a place you can return to.</span></p>
         </div>
 
         <div class="feature-grid">
-          <article class="feature-card wide reveal">
-            <div class="feature-symbol" aria-hidden="true">⌨</div>
-            <h3><span data-lang="zh">在正在输入的地方，找回最近内容。</span><span data-lang="en">Bring recent content into the field you are using.</span></h3>
-            <p><span data-lang="zh">切换到 Klipo 键盘即可插入文字、链接和颜色；图片可复制到系统剪贴板，并在兼容的 App 中拖放使用。</span><span data-lang="en">Switch to the Klipo keyboard to insert text, links, and colors. Copy images to the system clipboard or drag them into compatible apps.</span></p>
-            <div class="phone-showcase" aria-label="Klipo keyboard and pinboard screenshots">
-              <div class="phone-frame"><img src="assets/keyboard.jpg" alt="Klipo keyboard showing recent clipboard items" width="2046" height="3510" loading="lazy" decoding="async"></div>
-              <div class="phone-frame"><img src="assets/pinboards.jpg" alt="Klipo pinboard selector" width="2046" height="3510" loading="lazy" decoding="async"></div>
-            </div>
-          </article>
-
           <article class="feature-card reveal">
             <div class="feature-symbol" aria-hidden="true">↗</div>
-            <h3><span data-lang="zh">分享即保存</span><span data-lang="en">Save from Share</span></h3>
-            <p><span data-lang="zh">在系统分享菜单中选择“保存到 Klipo”，文字、链接或图片会进入轻贴，稍后再整理和使用。</span><span data-lang="en">Choose “Save to Klipo” from the system share sheet to keep text, links, or images for later.</span></p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-symbol" aria-hidden="true">▤</div>
-            <h3><span data-lang="zh">iPad 多栏工作台</span><span data-lang="en">An iPad workspace</span></h3>
-            <p><span data-lang="zh">侧边栏、内容区与详情区会根据窗口宽度自动调整，在全屏、分屏和台前调度中保持清晰。</span><span data-lang="en">Sidebar, history, and detail views adapt to the available width across full screen, Split View, and Stage Manager.</span></p>
-          </article>
-
-          <article class="feature-card wide reveal">
-            <div class="feature-symbol" aria-hidden="true">☁</div>
-            <h3><span data-lang="zh">从 Mac 复制，在移动设备继续。</span><span data-lang="en">Copy on Mac. Continue on your mobile devices.</span></h3>
-            <p><span data-lang="zh">开启 iCloud 同步后，轻贴通过 Apple CloudKit 在你的设备之间同步支持的剪贴内容、固定状态与固定板。轻贴不运营额外的剪贴板服务器。</span><span data-lang="en">When iCloud sync is enabled, Klipo uses Apple CloudKit to sync supported clipboard items, pinned states, and pinboards. Klipo does not operate a separate clipboard server.</span></p>
-            <div class="workflow">
-              <div class="workflow-step"><strong><span data-lang="zh">1. 保存</span><span data-lang="en">1. Save</span></strong><span><span data-lang="zh">复制内容或使用分享扩展</span><span data-lang="en">Copy content or use the share extension</span></span></div>
-              <div class="workflow-step"><strong><span data-lang="zh">2. 整理</span><span data-lang="en">2. Organize</span></strong><span><span data-lang="zh">搜索、固定或放入固定板</span><span data-lang="en">Search, pin, or move into a pinboard</span></span></div>
-              <div class="workflow-step"><strong><span data-lang="zh">3. 使用</span><span data-lang="en">3. Reuse</span></strong><span><span data-lang="zh">从 App、键盘或 Mac 面板取回</span><span data-lang="en">Retrieve it from the app, keyboard, or Mac panel</span></span></div>
-            </div>
+            <p class="feature-index">01</p>
+            <h3><span data-lang="zh">随手保存</span><span data-lang="en">Save anywhere</span></h3>
+            <p><span data-lang="zh">复制内容，或从系统分享菜单发送到轻贴。文字、链接、图片与颜色会安静地进入历史。</span><span data-lang="en">Copy content or send it from the system share sheet. Text, links, images, and colors settle into your history.</span></p>
           </article>
 
           <article class="feature-card reveal">
             <div class="feature-symbol" aria-hidden="true">⌕</div>
-            <h3><span data-lang="zh">按内容方式搜索</span><span data-lang="en">Search by meaning and type</span></h3>
-            <p><span data-lang="zh">通过文字搜索和内容类型筛选快速缩小范围；详情页支持中文分词选择，让长文本重新变得可用。</span><span data-lang="en">Narrow results with text and content-type filters. Chinese word segmentation makes long text easier to reuse.</span></p>
+            <p class="feature-index">02</p>
+            <h3><span data-lang="zh">快速找回</span><span data-lang="en">Find it again</span></h3>
+            <p><span data-lang="zh">按文字和内容类型搜索，用固定板收好重要片段；中文分词让长文本也能直接复用。</span><span data-lang="en">Search by text and type, keep important snippets in pinboards, and reuse precise parts of longer content.</span></p>
           </article>
 
           <article class="feature-card reveal">
-            <div class="feature-symbol" aria-hidden="true">●</div>
-            <h3><span data-lang="zh">固定重要内容</span><span data-lang="en">Pin what matters</span></h3>
-            <p><span data-lang="zh">为工作、灵感或常用回复建立不同固定板，让重要片段不再被新的复制记录淹没。</span><span data-lang="en">Create pinboards for work, ideas, or frequent replies so important snippets do not disappear under new copies.</span></p>
+            <div class="feature-symbol" aria-hidden="true">☁</div>
+            <p class="feature-index">03</p>
+            <h3><span data-lang="zh">跨设备继续</span><span data-lang="en">Continue anywhere</span></h3>
+            <p><span data-lang="zh">通过 Apple CloudKit，在 iPhone、iPad 与 Mac 之间同步支持的历史、固定状态和固定板。</span><span data-lang="en">Use Apple CloudKit to sync supported history, pinned states, and pinboards across iPhone, iPad, and Mac.</span></p>
           </article>
         </div>
       </section>
@@ -128,38 +101,30 @@
           <p><span data-lang="zh">从底部面板到刘海模式，真实展示轻贴在 Mac 上的主要使用方式。</span><span data-lang="en">A real look at Klipo's bottom panel, notch mode, filters, settings, and pinboards on Mac.</span></p>
         </div>
 
-        <div class="mac-showcase-grid">
-          <figure class="mac-media mac-media-wide reveal">
+        <div class="mac-showcase">
+          <figure class="mac-video reveal">
             <video controls muted loop playsinline preload="metadata" poster="assets/mac/workflow.jpg" width="1600" height="1094" data-motion-video aria-label="Klipo Mac 操作演示">
               <source src="assets/mac/workflow.mp4" type="video/mp4">
             </video>
             <figcaption><span data-lang="zh">Mac 操作演示</span><span data-lang="en">Mac workflow</span></figcaption>
           </figure>
 
-          <figure class="mac-media reveal">
-            <img src="assets/mac/history.jpg" alt="Klipo Mac 底部剪贴历史面板" width="1800" height="1125" loading="lazy" decoding="async">
-            <figcaption><span data-lang="zh">多类型剪贴历史</span><span data-lang="en">Multi-format clipboard history</span></figcaption>
-          </figure>
+          <div class="mac-gallery" aria-label="Klipo Mac 界面展示">
+            <figure class="mac-media reveal">
+              <img src="assets/mac/notch.jpg" alt="Klipo Mac 刘海剪贴板面板" width="1800" height="1125" loading="lazy" decoding="async">
+              <figcaption><span data-lang="zh">刘海模式</span><span data-lang="en">Notch mode</span></figcaption>
+            </figure>
 
-          <figure class="mac-media reveal">
-            <img src="assets/mac/colors.jpg" alt="Klipo Mac 颜色内容筛选" width="1800" height="1125" loading="lazy" decoding="async">
-            <figcaption><span data-lang="zh">颜色内容筛选</span><span data-lang="en">Color filtering</span></figcaption>
-          </figure>
+            <figure class="mac-media reveal">
+              <img src="assets/mac/history.jpg" alt="Klipo Mac 底部剪贴历史面板" width="1800" height="1125" loading="lazy" decoding="async">
+              <figcaption><span data-lang="zh">底部面板</span><span data-lang="en">Bottom panel</span></figcaption>
+            </figure>
 
-          <figure class="mac-media reveal">
-            <img src="assets/mac/settings.jpg" alt="Klipo Mac 偏好设置" width="1800" height="1125" loading="lazy" decoding="async">
-            <figcaption><span data-lang="zh">偏好设置</span><span data-lang="en">Preferences</span></figcaption>
-          </figure>
-
-          <figure class="mac-media reveal">
-            <img src="assets/mac/notch.jpg" alt="Klipo Mac 刘海剪贴板面板" width="1800" height="1125" loading="lazy" decoding="async">
-            <figcaption><span data-lang="zh">刘海剪贴板</span><span data-lang="en">Notch clipboard</span></figcaption>
-          </figure>
-
-          <figure class="mac-media mac-media-wide reveal">
-            <img src="assets/mac/pinboards.jpg" alt="Klipo Mac 固定板" width="1800" height="1125" loading="lazy" decoding="async">
-            <figcaption><span data-lang="zh">多个固定板</span><span data-lang="en">Multiple pinboards</span></figcaption>
-          </figure>
+            <figure class="mac-media reveal">
+              <img src="assets/mac/settings.jpg" alt="Klipo Mac 偏好设置" width="1800" height="1125" loading="lazy" decoding="async">
+              <figcaption><span data-lang="zh">设置</span><span data-lang="en">Settings</span></figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -172,45 +137,45 @@
 
         <div class="motion-grid">
           <article class="motion-card reveal">
-            <h3><span data-lang="zh">标签栏动画</span><span data-lang="en">Tab bar animation</span></h3>
             <video controls muted loop playsinline preload="metadata" poster="assets/videos/tab-bar.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 标签栏动画演示">
               <source src="assets/videos/tab-bar.mp4" type="video/mp4">
             </video>
+            <h3><span data-lang="zh">标签栏动画</span><span data-lang="en">Tab bar animation</span></h3>
           </article>
 
           <article class="motion-card reveal">
-            <h3><span data-lang="zh">固定动画</span><span data-lang="en">Pin animation</span></h3>
             <video controls muted loop playsinline preload="metadata" poster="assets/videos/pin.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 固定内容动画演示">
               <source src="assets/videos/pin.mp4" type="video/mp4">
             </video>
+            <h3><span data-lang="zh">固定动画</span><span data-lang="en">Pin animation</span></h3>
           </article>
 
           <article class="motion-card reveal">
-            <h3><span data-lang="zh">取消固定</span><span data-lang="en">Unpin animation</span></h3>
             <video controls muted loop playsinline preload="metadata" poster="assets/videos/unpin.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 取消固定动画演示">
               <source src="assets/videos/unpin.mp4" type="video/mp4">
             </video>
+            <h3><span data-lang="zh">取消固定</span><span data-lang="en">Unpin animation</span></h3>
           </article>
 
           <article class="motion-card reveal">
-            <h3><span data-lang="zh">切换主题</span><span data-lang="en">Theme switching</span></h3>
             <video controls muted loop playsinline preload="metadata" poster="assets/videos/theme.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 切换主题动画演示">
               <source src="assets/videos/theme.mp4" type="video/mp4">
             </video>
+            <h3><span data-lang="zh">切换主题</span><span data-lang="en">Theme switching</span></h3>
           </article>
 
           <article class="motion-card reveal">
-            <h3><span data-lang="zh">中文分词</span><span data-lang="en">Chinese word segmentation</span></h3>
             <video controls muted loop playsinline preload="metadata" poster="assets/videos/word-segmentation.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 中文分词动画演示">
               <source src="assets/videos/word-segmentation.mp4" type="video/mp4">
             </video>
+            <h3><span data-lang="zh">中文分词</span><span data-lang="en">Chinese word segmentation</span></h3>
           </article>
 
           <article class="motion-card reveal">
-            <h3><span data-lang="zh">3D 悬浮动画</span><span data-lang="en">3D floating animation</span></h3>
             <video controls muted loop playsinline preload="metadata" poster="assets/videos/floating-3d.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 3D 悬浮动画演示">
               <source src="assets/videos/floating-3d.mp4" type="video/mp4">
             </video>
+            <h3><span data-lang="zh">3D 悬浮动画</span><span data-lang="en">3D floating animation</span></h3>
           </article>
         </div>
       </section>
@@ -230,13 +195,6 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="cta-card reveal">
-          <h2><span data-lang="zh">需要帮助？我们把步骤写清楚了。</span><span data-lang="en">Need help? The steps are ready.</span></h2>
-          <p><span data-lang="zh">查看键盘、分享扩展、iCloud 同步和 Mac 自动粘贴的设置方法。</span><span data-lang="en">Find setup and troubleshooting for the keyboard, share extension, iCloud sync, and automatic paste on Mac.</span></p>
-          <a class="button button-primary" href="support.html"><span data-lang="zh">打开支持中心</span><span data-lang="en">Open Support</span></a>
-        </div>
-      </section>
     </div>
   </main>
 
