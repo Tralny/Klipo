@@ -430,6 +430,34 @@ button {
   font-size: 14px;
 }
 
+.motion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 18px;
+  align-items: start;
+}
+
+.motion-card {
+  min-width: 0;
+}
+
+.motion-card h3 {
+  margin: 0 0 12px;
+  font-size: 19px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.motion-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  background: transparent;
+  box-shadow: var(--shadow-soft);
+}
+
 .privacy-strip {
   padding: clamp(28px, 4vw, 46px);
   display: grid;
@@ -729,6 +757,10 @@ button {
     grid-template-columns: 1fr 1fr;
   }
 
+  .motion-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .privacy-strip {
     grid-template-columns: 1fr;
   }
@@ -794,7 +826,8 @@ button {
   }
 
   .workflow,
-  .support-grid {
+  .support-grid,
+  .motion-grid {
     grid-template-columns: 1fr;
   }
 

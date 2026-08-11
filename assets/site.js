@@ -31,19 +31,36 @@
     node.textContent = String(new Date().getFullYear());
   });
 
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const supportsIntersectionObserver = "IntersectionObserver" in window;
   const reveals = document.querySelectorAll(".reveal");
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+  if (reducedMotion || !supportsIntersectionObserver) {
     reveals.forEach((node) => node.classList.add("is-visible"));
-    return;
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach((node) => observer.observe(node));
   }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
-    });
-  }, { threshold: 0.12 });
+  const motionVideos = document.querySelectorAll("[data-motion-video]");
+  if (!reducedMotion && supportsIntersectionObserver) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.45 });
 
-  reveals.forEach((node) => observer.observe(node));
+    motionVideos.forEach((video) => videoObserver.observe(video));
+  }
 })();
