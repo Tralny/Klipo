@@ -430,6 +430,39 @@ button {
   font-size: 14px;
 }
 
+.mac-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px 18px;
+  align-items: start;
+}
+
+.mac-media {
+  min-width: 0;
+  margin: 0;
+}
+
+.mac-media-wide {
+  grid-column: 1 / -1;
+}
+
+.mac-media img,
+.mac-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.mac-media figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 620;
+}
+
 .motion-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -827,8 +860,13 @@ button {
 
   .workflow,
   .support-grid,
-  .motion-grid {
+  .motion-grid,
+  .mac-showcase-grid {
     grid-template-columns: 1fr;
+  }
+
+  .mac-media-wide {
+    grid-column: auto;
   }
 
   .legal-shell {

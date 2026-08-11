@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="1024x1024" href="assets/app-icon.png?v=20260811">
   <link rel="shortcut icon" type="image/png" href="assets/app-icon.png?v=20260811">
   <link rel="apple-touch-icon" href="assets/app-icon.png?v=20260811">
-  <link rel="stylesheet" href="assets/site.css?v=20260811">
+  <link rel="stylesheet" href="assets/site.css?v=20260811-2">
   <script>
     try {
       document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
@@ -62,7 +62,7 @@
           <a class="button button-secondary" href="support.html"><span data-lang="zh">获得支持</span><span data-lang="en">Get support</span></a>
         </div>
         <figure class="hero-visual reveal">
-          <img src="assets/mac-klipo.jpg" alt="Klipo clipboard history panel running on a Mac" width="1800" height="1125" decoding="async">
+          <img src="assets/mac/history.jpg" alt="Klipo clipboard history panel running on a Mac" width="1800" height="1125" decoding="async">
         </figure>
       </section>
 
@@ -118,6 +118,48 @@
             <h3><span data-lang="zh">固定重要内容</span><span data-lang="en">Pin what matters</span></h3>
             <p><span data-lang="zh">为工作、灵感或常用回复建立不同固定板，让重要片段不再被新的复制记录淹没。</span><span data-lang="en">Create pinboards for work, ideas, or frequent replies so important snippets do not disappear under new copies.</span></p>
           </article>
+        </div>
+      </section>
+
+      <section class="section" id="mac">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Klipo for Mac</p>
+          <h2><span data-lang="zh">呼出、筛选、固定，<br>都留在当前工作流里。</span><span data-lang="en">Open, filter, and pin.<br>Stay in your workflow.</span></h2>
+          <p><span data-lang="zh">从底部面板到刘海模式，真实展示轻贴在 Mac 上的主要使用方式。</span><span data-lang="en">A real look at Klipo's bottom panel, notch mode, filters, settings, and pinboards on Mac.</span></p>
+        </div>
+
+        <div class="mac-showcase-grid">
+          <figure class="mac-media mac-media-wide reveal">
+            <video controls muted loop playsinline preload="metadata" poster="assets/mac/workflow.jpg" width="1600" height="1094" data-motion-video aria-label="Klipo Mac 操作演示">
+              <source src="assets/mac/workflow.mp4" type="video/mp4">
+            </video>
+            <figcaption><span data-lang="zh">Mac 操作演示</span><span data-lang="en">Mac workflow</span></figcaption>
+          </figure>
+
+          <figure class="mac-media reveal">
+            <img src="assets/mac/history.jpg" alt="Klipo Mac 底部剪贴历史面板" width="1800" height="1125" loading="lazy" decoding="async">
+            <figcaption><span data-lang="zh">多类型剪贴历史</span><span data-lang="en">Multi-format clipboard history</span></figcaption>
+          </figure>
+
+          <figure class="mac-media reveal">
+            <img src="assets/mac/colors.jpg" alt="Klipo Mac 颜色内容筛选" width="1800" height="1125" loading="lazy" decoding="async">
+            <figcaption><span data-lang="zh">颜色内容筛选</span><span data-lang="en">Color filtering</span></figcaption>
+          </figure>
+
+          <figure class="mac-media reveal">
+            <img src="assets/mac/settings.jpg" alt="Klipo Mac 偏好设置" width="1800" height="1125" loading="lazy" decoding="async">
+            <figcaption><span data-lang="zh">偏好设置</span><span data-lang="en">Preferences</span></figcaption>
+          </figure>
+
+          <figure class="mac-media reveal">
+            <img src="assets/mac/notch.jpg" alt="Klipo Mac 刘海剪贴板面板" width="1800" height="1125" loading="lazy" decoding="async">
+            <figcaption><span data-lang="zh">刘海剪贴板</span><span data-lang="en">Notch clipboard</span></figcaption>
+          </figure>
+
+          <figure class="mac-media mac-media-wide reveal">
+            <img src="assets/mac/pinboards.jpg" alt="Klipo Mac 固定板" width="1800" height="1125" loading="lazy" decoding="async">
+            <figcaption><span data-lang="zh">多个固定板</span><span data-lang="en">Multiple pinboards</span></figcaption>
+          </figure>
         </div>
       </section>
 
@@ -209,6 +251,6 @@
       </div>
     </div>
   </footer>
-  <script src="assets/site.js?v=20260811"></script>
+  <script src="assets/site.js?v=20260811-2"></script>
 </body>
 </html>
