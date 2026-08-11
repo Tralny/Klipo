@@ -407,6 +407,13 @@ button {
   box-shadow: var(--shadow-soft);
 }
 
+[data-motion-video] {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
 .mac-gallery {
   margin-top: 38px;
   display: grid;
