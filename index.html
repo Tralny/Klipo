@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="1024x1024" href="assets/app-icon.png?v=20260811">
   <link rel="shortcut icon" type="image/png" href="assets/app-icon.png?v=20260811">
   <link rel="apple-touch-icon" href="assets/app-icon.png?v=20260811">
-  <link rel="stylesheet" href="assets/site.css?v=20260813-6">
+  <link rel="stylesheet" href="assets/site.css?v=20260813-7">
   <script>
     try {
       document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
@@ -66,7 +66,10 @@
           <a class="button button-secondary" href="support.html"><span data-lang="zh">获得支持</span><span data-lang="en">Get support</span></a>
         </div>
         <figure class="hero-shot reveal">
-          <img src="assets/hero-devices.png?v=20260813" alt="Klipo 在 Mac、iPad 与 iPhone 上的界面" width="2350" height="1204" loading="eager" fetchpriority="high">
+          <picture>
+            <source srcset="assets/hero-devices.webp?v=20260813" type="image/webp">
+            <img src="assets/hero-devices.png?v=20260813" alt="Klipo 在 Mac、iPad 与 iPhone 上的界面" width="2350" height="1204" loading="eager" fetchpriority="high">
+          </picture>
         </figure>
       </div>
     </section>
@@ -133,31 +136,31 @@
 
         <div class="showcase reveal" data-showcase>
           <div class="showcase-tabs" role="tablist" aria-label="Klipo interaction demos">
-            <button id="showcase-tab-content" type="button" class="showcase-tab is-active" role="tab" aria-selected="true" aria-controls="showcase-stage" tabindex="0" data-video="assets/videos/content-switch.mp4?v=20260813-3" data-poster="assets/videos/content-switch.jpg?v=20260813-3">
+            <button id="showcase-tab-content" type="button" class="showcase-tab is-active" role="tab" aria-selected="true" aria-controls="showcase-stage" tabindex="0" data-video="assets/videos/content-switch.mp4?v=20260813-4" data-poster="assets/videos/content-switch.jpg?v=20260813-4">
               <span class="tab-dot" aria-hidden="true"></span>
               <span data-lang="zh">内容切换</span><span data-lang="en">Content switch</span>
             </button>
-            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/pin-content.mp4?v=20260813-3" data-poster="assets/videos/pin-content.jpg?v=20260813-3">
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/pin-content.mp4?v=20260813-4" data-poster="assets/videos/pin-content.jpg?v=20260813-4">
               <span class="tab-dot" aria-hidden="true"></span>
               <span data-lang="zh">固定内容</span><span data-lang="en">Pin content</span>
             </button>
-            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/segmentation.mp4?v=20260813-3" data-poster="assets/videos/segmentation.jpg?v=20260813-3">
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/segmentation.mp4?v=20260813-4" data-poster="assets/videos/segmentation.jpg?v=20260813-4">
               <span class="tab-dot" aria-hidden="true"></span>
               <span data-lang="zh">处理分词</span><span data-lang="en">Segmentation</span>
             </button>
-            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/search.mp4?v=20260813-3" data-poster="assets/videos/search.jpg?v=20260813-3">
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/search.mp4?v=20260813-4" data-poster="assets/videos/search.jpg?v=20260813-4">
               <span class="tab-dot" aria-hidden="true"></span>
               <span data-lang="zh">搜索内容</span><span data-lang="en">Search content</span>
             </button>
-            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/theme-switch.mp4?v=20260813-3" data-poster="assets/videos/theme-switch.jpg?v=20260813-3">
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/theme-switch.mp4?v=20260813-4" data-poster="assets/videos/theme-switch.jpg?v=20260813-4">
               <span class="tab-dot" aria-hidden="true"></span>
               <span data-lang="zh">主题切换</span><span data-lang="en">Theme switch</span>
             </button>
-            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/keyboard-input.mp4?v=20260813-3" data-poster="assets/videos/keyboard-input.jpg?v=20260813-3">
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/keyboard-input.mp4?v=20260813-4" data-poster="assets/videos/keyboard-input.jpg?v=20260813-4">
               <span class="tab-dot" aria-hidden="true"></span>
               <span data-lang="zh">键盘输入</span><span data-lang="en">Keyboard input</span>
             </button>
-            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/extension-save.mp4?v=20260813-3" data-poster="assets/videos/extension-save.jpg?v=20260813-3">
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/extension-save.mp4?v=20260813-4" data-poster="assets/videos/extension-save.jpg?v=20260813-4">
               <span class="tab-dot" aria-hidden="true"></span>
               <span data-lang="zh">扩展保存</span><span data-lang="en">Extension save</span>
             </button>
@@ -165,8 +168,8 @@
 
           <div class="showcase-stage" id="showcase-stage" role="tabpanel" aria-labelledby="showcase-tab-content">
             <div class="showcase-device">
-              <video class="showcase-video" muted loop playsinline preload="metadata" poster="assets/videos/content-switch.jpg?v=20260813-3" width="1080" height="1920" data-motion-video data-showcase-video aria-label="Klipo 交互演示">
-                <source src="assets/videos/content-switch.mp4?v=20260813-3" type="video/mp4">
+              <video class="showcase-video" muted loop playsinline preload="metadata" poster="assets/videos/content-switch.jpg?v=20260813-4" width="720" height="1280" data-motion-video data-showcase-video aria-label="Klipo 交互演示">
+                <source src="assets/videos/content-switch.mp4?v=20260813-4" type="video/mp4">
               </video>
             </div>
           </div>

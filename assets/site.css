@@ -1066,6 +1066,10 @@ body.home-page {
   height: auto;
 }
 
+.home-page .hero-shot picture {
+  display: block;
+}
+
 .home-page .mac-stage {
   padding: 112px 0 96px;
   background: radial-gradient(120% 120% at 50% 0%, var(--showcase-dark-soft), var(--showcase-dark) 60%);
