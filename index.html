@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="1024x1024" href="assets/app-icon.png?v=20260811">
   <link rel="shortcut icon" type="image/png" href="assets/app-icon.png?v=20260811">
   <link rel="apple-touch-icon" href="assets/app-icon.png?v=20260811">
-  <link rel="stylesheet" href="assets/site.css?v=20260813-8">
+  <link rel="stylesheet" href="assets/site.css?v=20260813-9">
   <script>
     try {
       document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
@@ -84,10 +84,13 @@
 
         <div class="mac-showcase">
           <figure class="mac-video reveal">
-            <video muted loop playsinline preload="auto" poster="assets/mac/workflow.jpg" width="1600" height="1094" data-motion-video aria-label="Klipo Mac 操作演示">
+            <div class="mac-video-frame">
+              <img class="mac-video-poster" src="assets/mac/workflow.jpg?v=20260813-1" alt="" width="1600" height="1094" aria-hidden="true">
+              <video muted loop playsinline preload="auto" poster="assets/mac/workflow.jpg?v=20260813-1" width="1600" height="1094" data-motion-video data-mac-video aria-label="Klipo Mac 操作演示">
               <source src="assets/mac/workflow-hevc.mp4?v=20260813-1" type='video/mp4; codecs="hvc1"'>
               <source src="assets/mac/workflow.mp4" type="video/mp4">
-            </video>
+              </video>
+            </div>
             <figcaption><span data-lang="zh">Mac 操作演示</span><span data-lang="en">Mac workflow</span></figcaption>
           </figure>
 
@@ -241,6 +244,6 @@
       </div>
     </div>
   </footer>
-  <script src="assets/site.js?v=20260813-2"></script>
+  <script src="assets/site.js?v=20260813-3"></script>
 </body>
 </html>

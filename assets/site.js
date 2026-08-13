@@ -49,6 +49,15 @@
   }
 
   const motionVideos = document.querySelectorAll("[data-motion-video]");
+  const macVideo = document.querySelector("[data-mac-video]");
+  if (macVideo) {
+    const showMacVideoFrame = () => macVideo.classList.add("is-ready");
+    macVideo.addEventListener("loadeddata", showMacVideoFrame);
+    macVideo.addEventListener("playing", showMacVideoFrame);
+    macVideo.addEventListener("error", () => macVideo.classList.remove("is-ready"));
+    if (macVideo.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) showMacVideoFrame();
+  }
+
   if (!reducedMotion && supportsIntersectionObserver) {
     const videoObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
