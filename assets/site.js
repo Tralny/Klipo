@@ -63,4 +63,60 @@
 
     motionVideos.forEach((video) => videoObserver.observe(video));
   }
+
+  const showcase = document.querySelector("[data-showcase]");
+  if (showcase) {
+    const tabs = Array.from(showcase.querySelectorAll(".showcase-tab"));
+    const stage = showcase.querySelector("[role='tabpanel']");
+    const stageVideo = showcase.querySelector("[data-showcase-video]");
+
+    tabs.forEach((tab, index) => {
+      if (!tab.id) tab.id = `showcase-tab-${index + 1}`;
+    });
+
+    function selectShowcaseTab(tab, shouldFocus) {
+      if (!tab || !stageVideo) return;
+
+      tabs.forEach((item) => {
+        const isSelected = item === tab;
+        item.classList.toggle("is-active", isSelected);
+        item.setAttribute("aria-selected", String(isSelected));
+        item.tabIndex = isSelected ? 0 : -1;
+      });
+
+      if (stage) stage.setAttribute("aria-labelledby", tab.id);
+
+      const source = stageVideo.querySelector("source");
+      if (source && source.getAttribute("src") !== tab.dataset.video) {
+        source.setAttribute("src", tab.dataset.video);
+        stageVideo.poster = tab.dataset.poster;
+        stageVideo.load();
+        if (!reducedMotion) stageVideo.play().catch(() => {});
+      }
+
+      if (shouldFocus) tab.focus();
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => selectShowcaseTab(tab, false));
+      tab.addEventListener("keydown", (event) => {
+        const currentIndex = tabs.indexOf(tab);
+        let nextIndex = null;
+
+        if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+          nextIndex = (currentIndex + 1) % tabs.length;
+        } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+          nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+        } else if (event.key === "Home") {
+          nextIndex = 0;
+        } else if (event.key === "End") {
+          nextIndex = tabs.length - 1;
+        }
+
+        if (nextIndex === null) return;
+        event.preventDefault();
+        selectShowcaseTab(tabs[nextIndex], true);
+      });
+    });
+  }
 })();

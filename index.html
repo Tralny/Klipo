@@ -13,14 +13,14 @@
   <link rel="icon" type="image/png" sizes="1024x1024" href="assets/app-icon.png?v=20260811">
   <link rel="shortcut icon" type="image/png" href="assets/app-icon.png?v=20260811">
   <link rel="apple-touch-icon" href="assets/app-icon.png?v=20260811">
-  <link rel="stylesheet" href="assets/site.css?v=20260811-5">
+  <link rel="stylesheet" href="assets/site.css?v=20260813-6">
   <script>
     try {
       document.documentElement.dataset.lang = localStorage.getItem("klipo-site-language") || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
     } catch (_) {}
   </script>
 </head>
-<body data-title-zh="Klipo 轻贴 · 跨设备剪贴板" data-title-en="Klipo · A clipboard that moves with you">
+<body class="home-page" data-title-zh="Klipo 轻贴 · 跨设备剪贴板" data-title-en="Klipo · A clipboard that moves with you">
   <a class="skip-link" href="#main">
     <span data-lang="zh">跳到主要内容</span><span data-lang="en">Skip to content</span>
   </a>
@@ -42,18 +42,22 @@
   </header>
 
   <main id="main">
-    <div class="page-shell">
-      <section class="hero">
-        <img class="hero-icon reveal" src="assets/app-icon.png?v=20260811" alt="Klipo app icon" width="108" height="108">
-        <p class="eyebrow reveal">Klipo for iPhone · iPad · Mac</p>
+    <section class="hero">
+      <div class="page-shell hero-copy-col">
         <h1 class="reveal">
-          <span data-lang="zh">复制一次，<br>随处继续。</span>
+          <span data-lang="zh">复制一次，随处继续。</span>
           <span data-lang="en">Copy once.<br>Keep moving.</span>
         </h1>
         <p class="hero-copy reveal">
           <span data-lang="zh">轻贴把文字、链接、颜色与图片整理成清晰的历史记录，通过键盘和分享扩展，在需要的时候快速找回。</span>
           <span data-lang="en">Klipo keeps text, links, colors, and images in a clear history, then brings them back through its keyboard and share extensions.</span>
         </p>
+        <ul class="type-row reveal" aria-label="Supported content types">
+          <li class="t-text"><span data-lang="zh">文字</span><span data-lang="en">Text</span></li>
+          <li class="t-link"><span data-lang="zh">链接</span><span data-lang="en">Links</span></li>
+          <li class="t-image"><span data-lang="zh">图片</span><span data-lang="en">Images</span></li>
+          <li class="t-color"><span data-lang="zh">颜色</span><span data-lang="en">Colors</span></li>
+        </ul>
         <ul class="platform-row reveal" aria-label="Supported platforms">
           <li>iPhone</li><li>iPad</li><li>Mac</li><li>iCloud</li>
         </ul>
@@ -61,12 +65,17 @@
           <a class="button button-primary" href="https://apps.apple.com/cn/app/%E8%BD%BB%E8%B4%B4-%E5%88%98%E6%B5%B7%E5%89%AA%E8%B4%B4%E6%9D%BF/id6783726665?mt=12" target="_blank" rel="noopener noreferrer"><span data-lang="zh">免费下载 Mac 版</span><span data-lang="en">Download for Mac</span></a>
           <a class="button button-secondary" href="support.html"><span data-lang="zh">获得支持</span><span data-lang="en">Get support</span></a>
         </div>
-      </section>
+        <figure class="hero-shot reveal">
+          <img src="assets/hero-devices.png?v=20260813" alt="Klipo 在 Mac、iPad 与 iPhone 上的界面" width="2350" height="1204" loading="eager" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
 
-      <section class="section" id="mac">
+    <section class="mac-stage" id="mac">
+      <div class="page-shell">
         <div class="section-heading reveal">
           <p class="eyebrow">Klipo for Mac</p>
-          <h2><span data-lang="zh">呼出、筛选、固定，<br>都留在当前工作流里。</span><span data-lang="en">Open, filter, and pin.<br>Stay in your workflow.</span></h2>
+          <h2><span data-lang="zh">呼出、筛选、固定，都留在当前工作流里。</span><span data-lang="en">Open, filter, and pin.<br>Stay in your workflow.</span></h2>
           <p><span data-lang="zh">从底部面板到刘海模式，真实展示轻贴在 Mac 上的主要使用方式。</span><span data-lang="en">A real look at Klipo's bottom panel, notch mode, filters, settings, and pinboards on Mac.</span></p>
         </div>
 
@@ -79,77 +88,94 @@
           </figure>
 
           <div class="mac-gallery" aria-label="Klipo Mac 界面展示">
-            <figure class="mac-media reveal">
-              <img src="assets/mac/notch.jpg" alt="Klipo Mac 刘海剪贴板面板" width="1800" height="1125" loading="lazy" decoding="async">
-              <figcaption><span data-lang="zh">刘海模式</span><span data-lang="en">Notch mode</span></figcaption>
-            </figure>
-
-            <figure class="mac-media reveal">
-              <img src="assets/mac/history.jpg" alt="Klipo Mac 底部剪贴历史面板" width="1800" height="1125" loading="lazy" decoding="async">
-              <figcaption><span data-lang="zh">底部面板</span><span data-lang="en">Bottom panel</span></figcaption>
-            </figure>
-
-            <figure class="mac-media reveal">
-              <img src="assets/mac/settings.jpg" alt="Klipo Mac 偏好设置" width="1800" height="1125" loading="lazy" decoding="async">
-              <figcaption><span data-lang="zh">设置</span><span data-lang="en">Settings</span></figcaption>
-            </figure>
+            <div class="mac-row reveal">
+              <figure class="mac-media mac-row-media">
+                <img src="assets/mac/notch.jpg" alt="Klipo Mac 刘海剪贴板面板" width="1800" height="1125" loading="lazy" decoding="async">
+              </figure>
+              <div class="mac-row-text" style="--accent:#6fb2ff">
+                <span class="row-index">01 · <span data-lang="zh">刘海模式</span><span data-lang="en">Notch Mode</span></span>
+                <h3><span data-lang="zh">从屏幕顶端滑出，不占用桌面空间</span><span data-lang="en">Slides from the top. No desktop space lost.</span></h3>
+                <p><span data-lang="zh">全局快捷键唤出浮层，用完即收。</span><span data-lang="en">A global shortcut brings it down; it tucks away the moment you're done.</span></p>
+              </div>
+            </div>
+            <div class="mac-row reveal">
+              <figure class="mac-media mac-row-media">
+                <img src="assets/mac/history.jpg" alt="Klipo Mac 底部剪贴历史面板" width="1800" height="1125" loading="lazy" decoding="async">
+              </figure>
+              <div class="mac-row-text" style="--accent:#57e08f">
+                <span class="row-index">02 · <span data-lang="zh">底部面板</span><span data-lang="en">Bottom Panel</span></span>
+                <h3><span data-lang="zh">更大的传统面板，按类型筛选一目了然</span><span data-lang="en">A larger classic panel, filterable by type.</span></h3>
+                <p><span data-lang="zh">喜欢传统交互就切到这个模式。</span><span data-lang="en">Prefer a familiar layout? Switch here anytime.</span></p>
+              </div>
+            </div>
+            <div class="mac-row reveal">
+              <figure class="mac-media mac-row-media">
+                <img src="assets/mac/settings.jpg" alt="Klipo Mac 偏好设置" width="1800" height="1125" loading="lazy" decoding="async">
+              </figure>
+              <div class="mac-row-text" style="--accent:#ffb454">
+                <span class="row-index">03 · <span data-lang="zh">设置</span><span data-lang="en">Settings</span></span>
+                <h3><span data-lang="zh">快捷键、外观与同步，都可以按习惯调整</span><span data-lang="en">Shortcuts, appearance, and sync — all yours to tune.</span></h3>
+                <p><span data-lang="zh">轻贴跟着你的工作习惯走。</span><span data-lang="en">Klipo adapts to how you already work.</span></p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="motion">
+    <section class="section showcase-section" id="motion">
+      <div class="page-shell">
         <div class="section-heading reveal">
           <p class="eyebrow"><span data-lang="zh">交互细节</span><span data-lang="en">Interaction details</span></p>
-          <h2><span data-lang="zh">每一次操作，<br>都有清晰的回应。</span><span data-lang="en">Every action.<br>A clear response.</span></h2>
-          <p><span data-lang="zh">六段真实录屏，直接展示轻贴在 iPhone 上的标签切换、固定、主题与内容交互。</span><span data-lang="en">Six real screen recordings show Klipo's tab, pinning, theme, and content interactions on iPhone.</span></p>
+          <h2><span data-lang="zh">每一次操作，都有清晰的回应。</span><span data-lang="en">Every action.<br>A clear response.</span></h2>
+          <p><span data-lang="zh">七段真实录屏，直接展示轻贴在 iPhone 上的固定、搜索、主题与内容交互。</span><span data-lang="en">Seven real screen recordings show Klipo's pinning, search, theme, and content interactions on iPhone.</span></p>
         </div>
 
-        <div class="motion-grid">
-          <article class="motion-card reveal">
-            <video muted loop playsinline preload="metadata" poster="assets/videos/tab-bar.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 标签栏动画演示">
-              <source src="assets/videos/tab-bar.mp4" type="video/mp4">
-            </video>
-            <h3><span data-lang="zh">标签栏动画</span><span data-lang="en">Tab bar animation</span></h3>
-          </article>
+        <div class="showcase reveal" data-showcase>
+          <div class="showcase-tabs" role="tablist" aria-label="Klipo interaction demos">
+            <button id="showcase-tab-content" type="button" class="showcase-tab is-active" role="tab" aria-selected="true" aria-controls="showcase-stage" tabindex="0" data-video="assets/videos/content-switch.mp4?v=20260813-3" data-poster="assets/videos/content-switch.jpg?v=20260813-3">
+              <span class="tab-dot" aria-hidden="true"></span>
+              <span data-lang="zh">内容切换</span><span data-lang="en">Content switch</span>
+            </button>
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/pin-content.mp4?v=20260813-3" data-poster="assets/videos/pin-content.jpg?v=20260813-3">
+              <span class="tab-dot" aria-hidden="true"></span>
+              <span data-lang="zh">固定内容</span><span data-lang="en">Pin content</span>
+            </button>
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/segmentation.mp4?v=20260813-3" data-poster="assets/videos/segmentation.jpg?v=20260813-3">
+              <span class="tab-dot" aria-hidden="true"></span>
+              <span data-lang="zh">处理分词</span><span data-lang="en">Segmentation</span>
+            </button>
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/search.mp4?v=20260813-3" data-poster="assets/videos/search.jpg?v=20260813-3">
+              <span class="tab-dot" aria-hidden="true"></span>
+              <span data-lang="zh">搜索内容</span><span data-lang="en">Search content</span>
+            </button>
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/theme-switch.mp4?v=20260813-3" data-poster="assets/videos/theme-switch.jpg?v=20260813-3">
+              <span class="tab-dot" aria-hidden="true"></span>
+              <span data-lang="zh">主题切换</span><span data-lang="en">Theme switch</span>
+            </button>
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/keyboard-input.mp4?v=20260813-3" data-poster="assets/videos/keyboard-input.jpg?v=20260813-3">
+              <span class="tab-dot" aria-hidden="true"></span>
+              <span data-lang="zh">键盘输入</span><span data-lang="en">Keyboard input</span>
+            </button>
+            <button type="button" class="showcase-tab" role="tab" aria-selected="false" aria-controls="showcase-stage" tabindex="-1" data-video="assets/videos/extension-save.mp4?v=20260813-3" data-poster="assets/videos/extension-save.jpg?v=20260813-3">
+              <span class="tab-dot" aria-hidden="true"></span>
+              <span data-lang="zh">扩展保存</span><span data-lang="en">Extension save</span>
+            </button>
+          </div>
 
-          <article class="motion-card reveal">
-            <video muted loop playsinline preload="metadata" poster="assets/videos/pin.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 固定内容动画演示">
-              <source src="assets/videos/pin.mp4" type="video/mp4">
-            </video>
-            <h3><span data-lang="zh">固定动画</span><span data-lang="en">Pin animation</span></h3>
-          </article>
-
-          <article class="motion-card reveal">
-            <video muted loop playsinline preload="metadata" poster="assets/videos/unpin.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 取消固定动画演示">
-              <source src="assets/videos/unpin.mp4" type="video/mp4">
-            </video>
-            <h3><span data-lang="zh">取消固定</span><span data-lang="en">Unpin animation</span></h3>
-          </article>
-
-          <article class="motion-card reveal">
-            <video muted loop playsinline preload="metadata" poster="assets/videos/theme.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 切换主题动画演示">
-              <source src="assets/videos/theme.mp4" type="video/mp4">
-            </video>
-            <h3><span data-lang="zh">切换主题</span><span data-lang="en">Theme switching</span></h3>
-          </article>
-
-          <article class="motion-card reveal">
-            <video muted loop playsinline preload="metadata" poster="assets/videos/word-segmentation.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 中文分词动画演示">
-              <source src="assets/videos/word-segmentation.mp4" type="video/mp4">
-            </video>
-            <h3><span data-lang="zh">中文分词</span><span data-lang="en">Chinese word segmentation</span></h3>
-          </article>
-
-          <article class="motion-card reveal">
-            <video muted loop playsinline preload="metadata" poster="assets/videos/floating-3d.jpg" width="630" height="1368" data-motion-video aria-label="Klipo 3D 悬浮动画演示">
-              <source src="assets/videos/floating-3d.mp4" type="video/mp4">
-            </video>
-            <h3><span data-lang="zh">3D 悬浮动画</span><span data-lang="en">3D floating animation</span></h3>
-          </article>
+          <div class="showcase-stage" id="showcase-stage" role="tabpanel" aria-labelledby="showcase-tab-content">
+            <div class="showcase-device">
+              <video class="showcase-video" muted loop playsinline preload="metadata" poster="assets/videos/content-switch.jpg?v=20260813-3" width="1080" height="1920" data-motion-video data-showcase-video aria-label="Klipo 交互演示">
+                <source src="assets/videos/content-switch.mp4?v=20260813-3" type="video/mp4">
+              </video>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="features">
+    <section class="section" id="features">
+      <div class="page-shell">
         <div class="section-heading reveal">
           <p class="eyebrow"><span data-lang="zh">一个连续的工作流</span><span data-lang="en">One continuous workflow</span></p>
           <h2><span data-lang="zh">保存、整理、再次使用。<br>三件事，一条清晰路径。</span><span data-lang="en">Save, organize, reuse.<br>One clear path.</span></h2>
@@ -178,9 +204,11 @@
             <p><span data-lang="zh">通过 Apple CloudKit，在 iPhone、iPad 与 Mac 之间同步支持的历史、固定状态和固定板。</span><span data-lang="en">Use Apple CloudKit to sync supported history, pinned states, and pinboards across iPhone, iPad, and Mac.</span></p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
+    <section class="section">
+      <div class="page-shell">
         <div class="privacy-strip reveal">
           <div>
             <p class="eyebrow"><span data-lang="zh">隐私优先</span><span data-lang="en">Privacy first</span></p>
@@ -193,9 +221,8 @@
             <div class="privacy-fact"><span data-lang="zh">✓ 系统扩展按需读取内容</span><span data-lang="en">✓ Extensions access content only when needed</span></div>
           </div>
         </div>
-      </section>
-
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -209,6 +236,6 @@
       </div>
     </div>
   </footer>
-  <script src="assets/site.js?v=20260811-2"></script>
+  <script src="assets/site.js?v=20260813-1"></script>
 </body>
 </html>
