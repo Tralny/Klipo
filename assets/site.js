@@ -69,6 +69,8 @@
     const tabs = Array.from(showcase.querySelectorAll(".showcase-tab"));
     const stage = showcase.querySelector("[role='tabpanel']");
     const stageVideo = showcase.querySelector("[data-showcase-video]");
+    const stagePoster = showcase.querySelector("[data-showcase-poster]");
+    const preloaders = [];
 
     tabs.forEach((tab, index) => {
       if (!tab.id) tab.id = `showcase-tab-${index + 1}`;
@@ -88,6 +90,9 @@
 
       const source = stageVideo.querySelector("source");
       if (source && source.getAttribute("src") !== tab.dataset.video) {
+        stageVideo.classList.remove("is-ready");
+        stageVideo.pause();
+        if (stagePoster) stagePoster.src = tab.dataset.poster;
         source.setAttribute("src", tab.dataset.video);
         stageVideo.poster = tab.dataset.poster;
         stageVideo.load();
@@ -118,5 +123,51 @@
         selectShowcaseTab(tabs[nextIndex], true);
       });
     });
+
+    const showVideoFrame = () => stageVideo.classList.add("is-ready");
+    stageVideo.addEventListener("loadeddata", showVideoFrame);
+    stageVideo.addEventListener("playing", showVideoFrame);
+    stageVideo.addEventListener("error", () => stageVideo.classList.remove("is-ready"));
+    if (stageVideo.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) showVideoFrame();
+
+    function preloadShowcaseMedia() {
+      const activeSource = stageVideo.querySelector("source")?.getAttribute("src");
+      tabs.forEach((tab) => {
+        const poster = new Image();
+        poster.src = tab.dataset.poster;
+
+        if (tab.dataset.video === activeSource) return;
+        const video = document.createElement("video");
+        video.className = "showcase-video-preload";
+        video.muted = true;
+        video.playsInline = true;
+        video.preload = "auto";
+        video.src = tab.dataset.video;
+        video.setAttribute("aria-hidden", "true");
+        video.tabIndex = -1;
+        showcase.appendChild(video);
+        video.load();
+        preloaders.push(video);
+      });
+    }
+
+    const schedulePreload = () => {
+      if (supportsIntersectionObserver) {
+        const preloadObserver = new IntersectionObserver((entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          preloadObserver.disconnect();
+          preloadShowcaseMedia();
+        }, { rootMargin: "900px 0px" });
+        preloadObserver.observe(showcase);
+      } else {
+        window.setTimeout(preloadShowcaseMedia, 350);
+      }
+    };
+
+    if (document.readyState === "complete") {
+      schedulePreload();
+    } else {
+      window.addEventListener("load", schedulePreload, { once: true });
+    }
   }
 })();

@@ -1258,20 +1258,49 @@ body.home-page {
 }
 
 .home-page .showcase-device {
+  position: relative;
   width: clamp(275px, 25vw, 350px);
   aspect-ratio: 1080 / 1920;
 }
 
+.home-page .showcase-poster,
 .home-page .showcase-video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 1080 / 1920;
   display: block;
   border: 0;
   border-radius: 0;
+  object-fit: contain;
   background: #fefefe;
   box-shadow: none;
+}
+
+.home-page .showcase-poster {
+  z-index: 1;
+}
+
+.home-page .showcase-video {
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 140ms ease-out;
+}
+
+.home-page .showcase-video.is-ready {
+  opacity: 1;
+}
+
+.home-page .showcase-video-preload {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 @media (prefers-color-scheme: dark) {
